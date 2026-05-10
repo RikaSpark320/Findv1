@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportar Avistamiento"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etLugar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:hint="Lugar del avistamiento (Ej. Calle Benito Juárez)"
+            android:textColorHint="#95A5A6"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSeleccionarHora"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Seleccionar Hora y Fecha"
+            android:backgroundTint="#BDC3C7"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvFechaHoraSeleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No se ha seleccionado fecha/hora"
+            android:textAlignment="center"
+            android:textColor="#7F8C8D"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Subir Foto del Lugar"
+            android:backgroundTint="#F39C12"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnEnviarReporte"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Enviar Reporte"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#27AE60"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

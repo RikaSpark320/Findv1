@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnFichas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fichas de Búsqueda"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnReportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reporte de Avistamiento"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnEmergencia"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Botón de Pánico (911)"
+        android:backgroundTint="#CC0000"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>
