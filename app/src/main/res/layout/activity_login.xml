@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="32dp"
-    android:gravity="center"
-    android:background="#F0F4F8">
+    android:gravity="top|center_horizontal"
+    android:background="#B5B5B5">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,6 +51,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        app:cornerRadius="24dp"
         android:text="Iniciar Sesión"
         android:textSize="16sp"
         android:backgroundTint="#85C1E9"
@@ -55,7 +64,19 @@
         android:layout_height="wrap_content"
         android:text="¿No tienes cuenta? Regístrate"
         android:layout_marginTop="24dp"
-        android:textColor="#5DADE2"
+        android:textColor="#2C3E50"
         android:textSize="14sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnInvitado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cornerRadius="24dp"
+        android:text="Entrar como Invitado"
+        android:textSize="14sp"
+        android:backgroundTint="#8A9CA8"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp" />
+
 </LinearLayout>

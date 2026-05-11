@@ -23,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val tvRegister = findViewById<TextView>(R.id.tvRegister)
+        val btnInvitado = findViewById<Button>(R.id.btnInvitado)
 
         btnLogin.setOnClickListener {
             val email = etEmail.text.toString()
@@ -45,6 +46,11 @@ class LoginActivity : AppCompatActivity() {
 
         tvRegister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
+        }
+
+        btnInvitado.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }
